@@ -8,14 +8,14 @@ interface Props {
 
 function Button({ title, icon, variant = "purple" }: Props) {
   const styles = {
-    zinc: "bg-zinc-500 ",
-    purple: "bg-violet-500",
+    zinc: "bg-zinc-500 hover:bg-zinc-700",
+    purple: "bg-violet-500 hover:bg-violet-700",
   };
 
   return (
     <button
       className={[
-        `flex gap-3 py-[14.5px] px-4 rounded-md text-white hover:brightness-90 font-medium whitespace-nowrap`,
+        `flex items-center justify-center gap-3 py-[14.5px] px-4 rounded-md text-white  font-medium whitespace-nowrap transition-colors`,
       ]
         .concat(styles[variant])
         .join(" ")}
