@@ -1,1 +1,3 @@
-# nlw-esports
+# NLW-Esports Project
+
+## Go go, let's code... 🚀🚀🚀
